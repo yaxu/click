@@ -7,8 +7,8 @@ import Sound.OSC.Datum
 import qualified System.Hardware.Serialport as SP
 import Control.Monad
 import qualified Data.ByteString.Char8 as B
-import Data.Colour.SRGB
-import Data.Colour.Names
+-- import Data.Colour.SRGB
+-- import Data.Colour.Names
 import Control.Concurrent.MVar
 import GHC.Float
 

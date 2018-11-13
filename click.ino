@@ -1,12 +1,12 @@
 
 
-int value = 0;
+long int value = 0;
 
 #define MAX_CLICKERS 6
 #define OFFSET 2
-#define DEBUG 0
+#define DEBUG 1
 
-int clickers[MAX_CLICKERS] = {0,0,0,0,0,0};
+long int clickers[MAX_CLICKERS] = {0,0,0,0,0,0};
 
 void setup() {
   Serial.begin(115200);
@@ -35,7 +35,7 @@ void loop() {
           Serial.println("got value");
           Serial.println(value);
         }
-        clickers[value] = 20000;
+        clickers[value] = 100000;
         digitalWrite(value+OFFSET, HIGH);
       }
       value = 0;
@@ -49,6 +49,9 @@ void loop() {
         if (DEBUG) {
           Serial.println("off");
         }
+      }
+      else {
+       
       }
     }
   }

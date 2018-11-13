@@ -1,3 +1,8 @@
-
 import Click
-x silence
+
+c <- clickStream
+
+clickServer
+
+c $ chunk 4 (slow 2) $ n "<2 4>(5,8)"
+
